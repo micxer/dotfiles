@@ -1,0 +1,45 @@
+[user]
+    name = micxer
+    email = {{e@mail.adr}}
+
+[alias]
+    st = status
+    lg = log --name-only
+    ci = commit
+    pl = pull
+    ps = push
+    cp = cherry-pick
+    co = checkout
+    com = checkout master
+    rbi = rebase --interactive
+    ups = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all --not --remotes --tags
+    ap = add --patch
+    dc = diff --cached
+    gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+    go = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary @{u}..
+    g = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all
+    gb = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary
+    gbnb = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\"
+
+[core]
+    editor = vim
+
+[color]
+    ui = true
+    status = auto
+    branch = auto
+    interactive = auto
+    diff = auto
+
+[help]
+    autoCorrect = 20
+
+[push]
+    default = simple
+
+[pull]
+    rebase = true
+
+[branch]
+    autoSetupRebase = always
+
