@@ -8,14 +8,17 @@
     ci = commit
     pl = pull
     ps = push
-    cp = cherry-pick
     co = checkout
     com = checkout master
     rbi = rebase --interactive
+    rbm = rebase master
     ups = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all --not --remotes --tags
     ap = add --patch
     dc = diff --cached
-    gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+    df = diff --no-ext-diff
+    dfe = diff --ext-diff
+    cp = cherry-pick
+    br = branch
     go = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary @{u}..
     g = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all
     gb = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary
@@ -31,15 +34,32 @@
     interactive = auto
     diff = auto
 
-[help]
-    autoCorrect = 20
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
 
 [push]
-    default = simple
+    default = current
 
 [pull]
     rebase = true
+    default = current
 
 [branch]
-    autoSetupRebase = always
+    autosetuprebase = always
 
+[help]
+    autocorrect = true
+
+[difftool]
+    prompt = true
