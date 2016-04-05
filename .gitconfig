@@ -11,7 +11,7 @@
     co = checkout
     com = checkout master
     rbi = rebase --interactive
-    rbm = rebase master
+    rbm = !sh -c 'git fetch origin master:master && git rebase master'
     ups = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all --not --remotes --tags
     ap = add --patch
     dc = diff --cached
@@ -29,10 +29,7 @@
 
 [color]
     ui = true
-    status = auto
-    branch = auto
     interactive = auto
-    diff = auto
 
 [color "branch"]
     current = yellow reverse
@@ -59,7 +56,5 @@
     autosetuprebase = always
 
 [help]
-    autocorrect = true
+    autocorrect = 20
 
-[difftool]
-    prompt = true
