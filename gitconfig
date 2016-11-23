@@ -1,32 +1,29 @@
 [user]
     name = micxer
     email = {{e@mail.adr}}
-
-[alias]
-    st = status
-    lg = log --name-only
-    ci = commit
-    pl = pull
-    ps = push
-    co = checkout
-    com = checkout master
-    rbi = rebase --interactive
-    rbm = !sh -c 'git fetch origin master:master && git rebase master'
-    ups = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all --not --remotes --tags
-    ap = add --patch
-    dc = diff --cached
-    df = diff --no-ext-diff
-    dfe = diff --ext-diff
-    cp = cherry-pick
-    br = branch
-    go = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary @{u}..
-    g = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all
-    gb = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary
-    gbnb = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\"
-
 [core]
     editor = vim
-
+[alias]
+	ci = commit
+    co = checkout
+    com = checkout master
+    st = status
+    br = branch
+	gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+	ups = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all --not --remotes --tags
+    lg = log
+    lgod = log --oneline --decorate
+	go = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary @{u}..
+	g = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all
+	gb = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary
+	gbnb = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\"
+    ps = push
+    psf = push --force-with-lease
+    psff = push --force
+	pl = pull
+	rbi = rebase --interactive
+    ap = add --patch
+    dc = diff --cached
 [color]
     ui = true
     interactive = auto
@@ -46,12 +43,9 @@
     untracked = cyan
 
 [push]
-    default = current
-
+	default = tracking
 [pull]
-    rebase = true
-    default = current
-
+  rebase = true
 [branch]
     autosetuprebase = always
 
