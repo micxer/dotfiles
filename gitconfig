@@ -13,6 +13,7 @@
     psf = push --force-with-lease
     psff = push --force
     pl = pull
+    pr = fetch origin --prune --progress
     rbi = rebase --interactive
     ap = add --patch
     dc = diff --cached
