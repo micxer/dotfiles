@@ -16,6 +16,7 @@
     pl = pull
     pr = fetch origin --prune --progress
     rbi = rebase --interactive
+    rbm = rebase --interactive master
     ap = add --patch
     dc = diff --cached
     lg = log
@@ -28,7 +29,6 @@
 [color]
     ui = true
     interactive = auto
-
 [color "branch"]
     current = yellow reverse
     local = yellow
@@ -42,14 +42,12 @@
     added = yellow
     changed = green
     untracked = cyan
-
 [push]
     default = current
 [pull]
   rebase = true
 [branch]
     autosetuprebase = always
-
 [help]
     autocorrect = 20
 
