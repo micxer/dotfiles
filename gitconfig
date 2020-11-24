@@ -8,6 +8,7 @@
     ci = commit
     co = checkout
     com = checkout master
+    cor = checkout release
     st = status
     br = branch
     ps = push
@@ -17,15 +18,20 @@
     pr = fetch origin --prune --progress
     rbi = rebase --interactive
     rbm = rebase --interactive master
+    # fixup messed up commit
+    rbf = rebase --interactive HEAD~2
     ap = add --patch
     dc = diff --cached
-    lg = log
+    # word-diff
+    wdiff = diff --color-words --word-diff --word-diff-regex=[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+
+    # log including diffs
+    lg = log -p --pretty=fuller --abbrev-commit
+    # only changed files/stats
+    lgg = log --pretty=fuller --abbrev-commit --stat
+    # oneliner log
     lgod = log --oneline --decorate
+    # unpushed commits
     ups = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all --not --remotes --tags
-    go = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary @{u}..
-    g = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all
-    gb = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary
-    gbnb = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\"
 [color]
     ui = true
     interactive = auto
@@ -36,8 +42,8 @@
 [color "diff"]
     meta = yellow bold
     frag = magenta bold
-    old = red bold
-    new = green bold
+    old = red bold reverse
+    new = green bold reverse
 [color "status"]
     added = yellow
     changed = green
@@ -53,3 +59,12 @@
 [help]
     autocorrect = 20
 
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
