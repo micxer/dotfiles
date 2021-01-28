@@ -20,8 +20,11 @@
     rbm = rebase --interactive master
     # fixup messed up commit
     rbf = rebase --interactive HEAD~2
+    # selectively add changes from the whole changeset
     ap = add --patch
+    # show staged changes
     dc = diff --cached
+    lg = log
     # word-diff
     wdiff = diff --color-words --word-diff --word-diff-regex=[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+
     # log including diffs
@@ -30,7 +33,7 @@
     lgg = log --pretty=fuller --abbrev-commit --stat
     # oneliner log
     lgod = log --oneline --decorate
-    # unpushed commits
+    # show unpushed commits
     ups = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all --not --remotes --tags
 [color]
     ui = true
@@ -53,12 +56,11 @@
 [push]
     default = current
 [pull]
-  rebase = true
+    rebase = true
 [branch]
     autosetuprebase = always
 [help]
     autocorrect = 20
-
 [commit]
 	gpgsign = true
 [gpg]
