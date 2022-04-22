@@ -88,3 +88,5 @@ augroup vimrcEx
     \ endif
 
 augroup END
+
+au BufNewFile,BufRead /private/**/gopass** setlocal noswapfile nobackup noundofile
