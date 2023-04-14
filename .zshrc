@@ -26,7 +26,7 @@ if type brew &>/dev/null; then
     compinit
 fi
 
-eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
+which pipenv > /dev/null &&  eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
 
 ## History file configuration
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
