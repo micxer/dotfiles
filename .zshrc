@@ -57,12 +57,12 @@ alias k="kubectl"
 
 if [ -f $HOME/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-darwin19.3.0} ]
 then
-source $HOME/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-darwin19.3.0}
-[[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
-[[ -n ${key[End]} ]] && bindkey "${key[End]}" end-of-line
-[[ -n ${key[OptionLeft]} ]] && bindkey "${key[OptionLeft]}" backward-word
-[[ -n ${key[OptionRight]} ]] && bindkey "${key[OptionRight]}" forward-word
-[[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
+  source $HOME/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-darwin19.3.0}
+  [[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
+  [[ -n ${key[End]} ]] && bindkey "${key[End]}" end-of-line
+  [[ -n ${key[OptionLeft]} ]] && bindkey "${key[OptionLeft]}" backward-word
+  [[ -n ${key[OptionRight]} ]] && bindkey "${key[OptionRight]}" forward-word
+  [[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
 fi
 
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/gpg-agent/gpg-agent.plugin.zsh
@@ -83,3 +83,4 @@ eval "$(starship init zsh)"
 [ -f ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.zsh
 eval "$(direnv hook zsh)"
 
+[ -f ~/.zshrc_local ] && source ~/.zshrc_local
