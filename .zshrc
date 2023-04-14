@@ -50,18 +50,20 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_INSTALL_CLEANUP=0
 export HOMEBREW_CASK_OPTS="--appdir=\"$HOME/Applications\" --fontdir=\"/Library/Fonts\" --no-quarantine"
-#export HOMEBREW_CASK_OPTS="--appdir=\"/Applications\" --fontdir=\"/Library/Fonts\" --no-quarantine"
-source $HOME/.zshrc_homebrew_github_token
+[ -f ~/.zshrc_homebrew_github_token ] && source ~/.zshrc_homebrew_github_token
 
 alias g="git"
 alias k="kubectl"
 
+if [ -f $HOME/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-darwin19.3.0} ]
+then
 source $HOME/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-darwin19.3.0}
 [[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
 [[ -n ${key[End]} ]] && bindkey "${key[End]}" end-of-line
 [[ -n ${key[OptionLeft]} ]] && bindkey "${key[OptionLeft]}" backward-word
 [[ -n ${key[OptionRight]} ]] && bindkey "${key[OptionRight]}" forward-word
 [[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
+fi
 
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/gpg-agent/gpg-agent.plugin.zsh
 export GPG_TTY=$TTY
@@ -78,6 +80,6 @@ fi
 export STARSHIP_CONFIG=$HOME/.starship.toml
 eval "$(starship init zsh)"
 
-source ~/.iterm2_shell_integration.zsh
+[ -f ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.zsh
 eval "$(direnv hook zsh)"
 
