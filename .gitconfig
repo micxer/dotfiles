@@ -65,7 +65,7 @@
 [help]
     autocorrect = 20
 [commit]
-    gpgsign = true
+    #gpgsign = true
 [gpg]
     program = /usr/local/MacGPG2/bin/gpg2
 [filter "lfs"]
