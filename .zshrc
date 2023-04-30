@@ -55,9 +55,9 @@ export HOMEBREW_CASK_OPTS="--appdir=\"$HOME/Applications\" --fontdir=\"/Library/
 alias g="git"
 alias k="kubectl"
 
-if [ -f $HOME/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-darwin19.3.0} ]
+if [ -f $HOME/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-$OSTYPE} ]
 then
-  source $HOME/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-darwin19.3.0}
+  source $HOME/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-$OSTYPE}
   [[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
   [[ -n ${key[End]} ]] && bindkey "${key[End]}" end-of-line
   [[ -n ${key[OptionLeft]} ]] && bindkey "${key[OptionLeft]}" backward-word
