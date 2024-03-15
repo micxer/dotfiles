@@ -7,20 +7,24 @@
     cp = cherry-pick
     ci = commit
     co = checkout
-    com = checkout master
-    cor = checkout release
+    sw = switch
+    swm = switch main
+    swb = switch -
+    com = checkout main
     st = status
     br = branch
     ps = push
+    pst = push --tags
     # use this and avoid psff
     psf = push --force-with-lease
     psff = push --force
     pl = pull
     pr = fetch origin --prune --progress
     rbi = rebase --interactive
-    rbm = rebase --interactive master
+    rbm = rebase main
+    rbim = rebase --interactive main
     # fixup messed up commit
-    rbf = rebase --interactive HEAD~2
+    rbfx = rebase --interactive HEAD~2
     # selectively add changes from the whole changeset
     ap = add --patch
     # show staged changes
@@ -36,6 +40,9 @@
     lgod = log --oneline --decorate
     # show unpushed commits
     ups = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all --not --remotes --tags
+    # show tags sorted by date
+    tbyd = for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags
+    staash = stash --all
 [color]
     ui = true
     interactive = auto
@@ -54,18 +61,20 @@
     untracked = cyan
 [diff]
     wsErrorHighlight = all
+    tool = icdiff
 [push]
     default = current
 [pull]
     rebase = true
-[merge]
-    ff = only
 [branch]
     autosetuprebase = always
+[merge]
+	ff = only
+	tool = icdiff
 [help]
     autocorrect = 20
 [commit]
-    #gpgsign = true
+	gpgsign = true
 [gpg]
     program = /usr/local/MacGPG2/bin/gpg2
 [filter "lfs"]
@@ -73,3 +82,20 @@
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
+[init]
+	defaultBranch = main
+[secrets]
+	providers = git secrets --aws-provider
+	patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
+	patterns = (\"|')?(AWS|aws|Aws)?_?(SECRET|secret|Secret)?_?(ACCESS|access|Access)?_?(KEY|key|Key)(\"|')?\\s*(:|=>|=)\\s*(\"|')?[A-Za-z0-9/\\+=]{40}(\"|')?
+	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
+	allowed = AKIAIOSFODNN7EXAMPLE
+	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+[difftool]
+	prompt = false
+[rerere]
+	enabled = true
+[includeIf "gitdir:~/Development/oss/"]
+    path = ~/Development/oss/.gitconfig
+[includeIf "gitdir:~/Development/work/"]
+    path = ~/Development/work/.gitconfig
