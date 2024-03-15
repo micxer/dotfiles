@@ -6,7 +6,7 @@ then
 else
     PATH="/usr/local/sbin:$PATH"
 fi
-PATH="${HOME}/bin:${PATH}:${HOME}/.krew/bin"
+PATH="${HOME}/bin:${HOME}/.rd/bin:${PATH}:${HOME}/.krew/bin"
 export PATH
 
 # https://consoledonottrack.com/
@@ -52,6 +52,11 @@ export HOMEBREW_NO_INSTALL_CLEANUP=0
 export HOMEBREW_CASK_OPTS="--appdir=\"$HOME/Applications\" --fontdir=\"/Library/Fonts\" --no-quarantine"
 [ -f ~/.zshrc_homebrew_github_token ] && source ~/.zshrc_homebrew_github_token
 
+if `/usr/libexec/java_home 2> /dev/null`
+then
+    export JAVA_HOME=$(/usr/libexec/java_home)
+fi
+
 alias g="git"
 alias k="kubectl"
 
@@ -65,8 +70,13 @@ then
   [[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
 fi
 
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent -s`
+  ssh-add
+fi
+
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/gpg-agent/gpg-agent.plugin.zsh
-export GPG_TTY=$TTY
+export GPG_TTY=$(tty)
 
 gpg-connect-agent updatestartuptty /bye &>/dev/null
 # If enable-ssh-support is set, fix ssh agent integration
