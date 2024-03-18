@@ -1,11 +1,5 @@
 #!/usr/bin/env zsh
 
-if [[ $(uname -m) == 'arm64' ]]
-then
-    PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
-else
-    PATH="/usr/local/sbin:$PATH"
-fi
 PATH="${HOME}/bin:${HOME}/.rd/bin:${PATH}:${HOME}/.krew/bin"
 export PATH
 
