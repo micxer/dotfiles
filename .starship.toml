@@ -1,0 +1,68 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+################################################################################
+[aws]
+format = "on [$symbol$profile]($style) "
+[aws.region_aliases]
+eu-central-1 = "ec1"
+europe-west-3 = "ew3"
+
+################################################################################
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = ""
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 30
+style = "bold yellow"
+
+# when capacity is over 30%, the battery indicator will not be displayed
+
+################################################################################
+[cmd_duration]
+# $duration – The command duration (e.g. "15s")
+# $style    – The default style of the module (e.g. "bold yellow")
+format = "took [$duration]($style) "
+min_time = 1_000
+
+
+################################################################################
+[git_status]
+conflicted = "🏳"
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇡$ahead_count ⇣$behind_count"
+untracked = "🤷"
+stashed = "📚"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
+
+################################################################################
+[git_branch]
+symbol = "🌱 "
+truncation_length = 20
+truncation_symbol = "…"
+
+################################################################################
+[kubernetes]
+symbol = "⛵ "
+disabled = false
+
+################################################################################
+[directory]
+#truncation_length = 8
+#truncation_symbol = "…/"
+
+################################################################################
+[docker_context]
+symbol = "🐋 "
+only_with_files	= true
+disabled = true
