@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+# Taken from https://github.com/dvessel/dot-files. Thanks!
+
 # - Make sure full disk access is enabled for the terminal app so
 #   defaults can read from sandboxed apps and their containers.
 # - Doesn't account for hosts or -currentHost. I have not run into a any
