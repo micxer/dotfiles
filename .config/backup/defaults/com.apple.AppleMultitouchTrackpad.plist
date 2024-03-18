@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Clicking</key>
+	<true/>
+	<key>FirstClickThreshold</key>
+	<integer>2</integer>
+	<key>SecondClickThreshold</key>
+	<integer>2</integer>
+	<key>SettingsIndex</key>
+	<array>
+		<string>Clicking</string>
+		<string>FirstClickThreshold</string>
+		<string>SecondClickThreshold</string>
+		<string>TrackpadCornerSecondaryClick</string>
+		<string>TrackpadRightClick</string>
+		<string>TrackpadThreeFingerHorizSwipeGesture</string>
+	</array>
+	<key>TrackpadCornerSecondaryClick</key>
+	<integer>2</integer>
+	<key>TrackpadRightClick</key>
+	<integer>0</integer>
+	<key>TrackpadThreeFingerHorizSwipeGesture</key>
+	<integer>1</integer>
+</dict>
+</plist>
