@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SearchProviderShortName</key>
+	<string>DuckDuckGo</string>
+	<key>SettingsIndex</key>
+	<array>
+		<string>SearchProviderShortName</string>
+		<string>ShowSidebarInTopSites</string>
+		<string>UserStyleSheetEnabled</string>
+	</array>
+	<key>ShowSidebarInTopSites</key>
+	<false/>
+	<key>UserStyleSheetEnabled</key>
+	<false/>
+</dict>
+</plist>

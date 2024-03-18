@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppWindowGroupingBehavior</key>
+	<integer>1</integer>
+	<key>AutoHide</key>
+	<false/>
+	<key>HideDesktop</key>
+	<true/>
+	<key>SettingsIndex</key>
+	<array>
+		<string>AppWindowGroupingBehavior</string>
+		<string>AutoHide</string>
+		<string>HideDesktop</string>
+		<string>StageManagerHideWidgets</string>
+		<string>StandardHideWidgets</string>
+	</array>
+	<key>StageManagerHideWidgets</key>
+	<false/>
+	<key>StandardHideWidgets</key>
+	<false/>
+</dict>
+</plist>

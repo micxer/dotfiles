@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Programmer_InputMode</key>
+	<integer>10</integer>
+	<key>SettingsIndex</key>
+	<array>
+		<string>Programmer_InputMode</string>
+		<string>ViewDefaultsKey</string>
+	</array>
+	<key>ViewDefaultsKey</key>
+	<string>Scientific</string>
+</dict>
+</plist>

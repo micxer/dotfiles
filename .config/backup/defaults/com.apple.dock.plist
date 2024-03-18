@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SettingsIndex</key>
+	<array>
+		<string>autohide</string>
+		<string>largesize</string>
+		<string>magnification</string>
+		<string>minimize-to-application</string>
+		<string>mod-count</string>
+		<string>mru-spaces</string>
+		<string>no-bouncing</string>
+		<string>show-process-indicators</string>
+		<string>show-recents</string>
+		<string>showhidden</string>
+		<string>tilesize</string>
+		<string>wvous-bl-corner</string>
+		<string>wvous-bl-modifier</string>
+		<string>wvous-br-corner</string>
+		<string>wvous-br-modifier</string>
+		<string>wvous-tl-corner</string>
+		<string>wvous-tl-modifier</string>
+		<string>wvous-tr-corner</string>
+		<string>wvous-tr-modifier</string>
+	</array>
+	<key>autohide</key>
+	<true/>
+	<key>largesize</key>
+	<real>70</real>
+	<key>magnification</key>
+	<true/>
+	<key>minimize-to-application</key>
+	<true/>
+	<key>mod-count</key>
+	<integer>1513</integer>
+	<key>mru-spaces</key>
+	<false/>
+	<key>no-bouncing</key>
+	<true/>
+	<key>show-process-indicators</key>
+	<true/>
+	<key>show-recents</key>
+	<false/>
+	<key>showhidden</key>
+	<true/>
+	<key>tilesize</key>
+	<real>46</real>
+	<key>wvous-bl-corner</key>
+	<integer>3</integer>
+	<key>wvous-bl-modifier</key>
+	<integer>0</integer>
+	<key>wvous-br-corner</key>
+	<integer>1</integer>
+	<key>wvous-br-modifier</key>
+	<integer>1048576</integer>
+	<key>wvous-tl-corner</key>
+	<integer>1</integer>
+	<key>wvous-tl-modifier</key>
+	<integer>1048576</integer>
+	<key>wvous-tr-corner</key>
+	<integer>1</integer>
+	<key>wvous-tr-modifier</key>
+	<integer>1048576</integer>
+</dict>
+</plist>

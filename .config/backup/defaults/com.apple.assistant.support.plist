@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Offline Dictation Status</key>
+	<dict>
+		<key>ar-SA</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>da-DK</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>de-AT</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>de-CH</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>de-DE</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>en-AU</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>en-CA</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>en-GB</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>en-IE</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>en-IN</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>en-NZ</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>en-SG</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>en-US</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>en-ZA</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>es-CL</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>es-ES</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>es-MX</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>es-US</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>fi-FI</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>fr-BE</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>fr-CA</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>fr-CH</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>fr-FR</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>he-IL</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>it-CH</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>it-IT</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>ja-JP</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>ko-KR</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>ms-MY</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>nb-NO</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>nl-BE</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>nl-NL</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>pt-BR</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>ru-RU</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>sv-SE</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>th-TH</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>tr-TR</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>yue-CN</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>zh-CN</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>zh-HK</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>zh-TW</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SettingsIndex</key>
+	<array>
+		<string>Offline Dictation Status</string>
+	</array>
+</dict>
+</plist>

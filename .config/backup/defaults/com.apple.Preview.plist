@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSColorPanelMode</key>
+	<string>1</string>
+	<key>NSColorPickerPreferredRGBEntryMode</key>
+	<integer>2</integer>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>1</string>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<true/>
+	<key>PVImageSizeResolutionUnit</key>
+	<integer>10</integer>
+	<key>PVImageSizeSizeUnit</key>
+	<integer>5</integer>
+	<key>PVInspectorWindowOpenOnStart</key>
+	<false/>
+	<key>PVSidebarViewModeForNewDocuments</key>
+	<integer>3</integer>
+	<key>SettingsIndex</key>
+	<array>
+		<string>NSColorPanelMode</string>
+		<string>NSColorPickerPreferredRGBEntryMode</string>
+		<string>NSColorPickerSlidersDefaults</string>
+		<string>NSToolbar Configuration com.apple.NSColorPanel</string>
+		<string>PMPrintingExpandedStateForPrint2</string>
+		<string>PVImageSizeResolutionUnit</string>
+		<string>PVImageSizeSizeUnit</string>
+		<string>PVInspectorWindowOpenOnStart</string>
+		<string>PVSidebarViewModeForNewDocuments</string>
+		<string>com.apple.AnnotationKit.strokeWidth</string>
+	</array>
+	<key>com.apple.AnnotationKit.strokeWidth</key>
+	<real>15</real>
+</dict>
+</plist>
