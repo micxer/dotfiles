@@ -112,10 +112,8 @@ if [[ $(gpgconf --list-options gpg-agent 2>/dev/null | awk -F: '$1=="enable-ssh-
   fi
 fi
 
+eval "$(direnv hook zsh)"
+
 export STARSHIP_CONFIG=$HOME/.starship.toml
 eval "$(starship init zsh)"
 
-[ -f ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.zsh
-eval "$(direnv hook zsh)"
-
-[ -f ~/.zshrc_local ] && source ~/.zshrc_local
