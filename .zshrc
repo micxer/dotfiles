@@ -44,7 +44,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_INSTALL_CLEANUP=0
 export HOMEBREW_CASK_OPTS="--appdir=\"$HOME/Applications\" --fontdir=\"/Library/Fonts\" --no-quarantine"
-[ -f ~/.zshrc_homebrew_github_token ] && source ~/.zshrc_homebrew_github_token
+[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
 if `/usr/libexec/java_home 2> /dev/null`
 then
@@ -117,3 +117,7 @@ eval "$(direnv hook zsh)"
 export STARSHIP_CONFIG=$HOME/.starship.toml
 eval "$(starship init zsh)"
 
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
