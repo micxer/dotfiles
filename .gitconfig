@@ -96,6 +96,7 @@
 	prompt = false
 [rerere]
 	enabled = true
+	autoUpdate = true
 [includeIf "gitdir:~/Development/oss/"]
     path = ~/Development/oss/.gitconfig
 [includeIf "gitdir:~/Development/work/"]
