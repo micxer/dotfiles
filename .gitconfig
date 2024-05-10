@@ -68,6 +68,7 @@
     rebase = true
 [branch]
     autosetuprebase = always
+	sort = -committerdate
 [merge]
 	ff = only
 	tool = icdiff
@@ -99,3 +100,5 @@
     path = ~/Development/oss/.gitconfig
 [includeIf "gitdir:~/Development/work/"]
     path = ~/Development/work/.gitconfig
+[column]
+	ui = auto
