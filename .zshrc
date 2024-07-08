@@ -52,6 +52,7 @@ then
 fi
 
 alias g="git"
+alias gw="gw.sh git"
 alias k="kubectl"
 
 # create a zkbd compatible hash;
