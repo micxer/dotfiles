@@ -43,7 +43,7 @@ export LANG=en_GB.UTF-8
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_INSTALL_CLEANUP=0
-export HOMEBREW_CASK_OPTS="--appdir=\"$HOME/Applications\" --fontdir=\"/Library/Fonts\" --no-quarantine"
+export HOMEBREW_CASK_OPTS="--fontdir=\"/Library/Fonts\" --no-quarantine"
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
 if `/usr/libexec/java_home 2> /dev/null`
@@ -122,3 +122,7 @@ eval "$(starship init zsh)"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/zrkfl3d/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
