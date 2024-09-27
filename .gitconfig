@@ -25,6 +25,7 @@
     rbim = rebase --interactive main
     # fixup messed up commit
     rbfx = rebase --interactive HEAD~2
+    rbas = rebase --autosquash main
     # selectively add changes from the whole changeset
     ap = add --patch
     # show staged changes
