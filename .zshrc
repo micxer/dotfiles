@@ -42,7 +42,7 @@ export LANG=en_GB.UTF-8
 
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_AUTO_UPDATE_SECS=86400
-export HOMEBREW_NO_INSTALL_CLEANUP=0
+export HOMEBREW_NO_INSTALL_CLEANUP=FALSE
 export HOMEBREW_CASK_OPTS="--fontdir=\"/Library/Fonts\" --no-quarantine"
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
