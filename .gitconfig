@@ -6,6 +6,7 @@
 [alias]
     cp = cherry-pick
     ci = commit
+    cfx = !git log -n 50 --pretty=format:\"%h %s\" --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup
     co = checkout
     sw = switch
     swm = switch main
