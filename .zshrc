@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-PATH="${HOME}/bin:${HOME}/.rd/bin:${PATH}:${HOME}/.krew/bin"
+PATH="${HOME}/bin:${HOME}/.local/bin:${HOME}/.cargo/bin:${PATH}:/usr/local/opt/ansible@9/bin:${HOME}/Applications/Docker.app/Contents/Resources/bin"
 export PATH
 
 # https://consoledonottrack.com/
@@ -19,8 +19,6 @@ if type brew &>/dev/null; then
     autoload -Uz compinit
     compinit
 fi
-
-which pipenv > /dev/null &&  eval "$(_PIPENV_COMPLETE=zsh_source pipenv)"
 
 ## History file configuration
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
@@ -42,7 +40,7 @@ export LANG=en_GB.UTF-8
 
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_AUTO_UPDATE_SECS=86400
-export HOMEBREW_NO_INSTALL_CLEANUP=FALSE
+export HOMEBREW_NO_INSTALL_CLEANUP=
 export HOMEBREW_CASK_OPTS="--fontdir=\"/Library/Fonts\" --no-quarantine"
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
@@ -118,7 +116,3 @@ eval "$(direnv hook zsh)"
 export STARSHIP_CONFIG=$HOME/.starship.toml
 eval "$(starship init zsh)"
 
-
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
