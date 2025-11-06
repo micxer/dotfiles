@@ -99,6 +99,16 @@
 				<string>standard</string>
 			</dict>
 		</dict>
+		<key>176</key>
+		<dict>
+			<key>enabled</key>
+			<false/>
+			<key>value</key>
+			<dict>
+				<key>type</key>
+				<string>SAE1.0</string>
+			</dict>
+		</dict>
 		<key>18</key>
 		<dict>
 			<key>enabled</key>
