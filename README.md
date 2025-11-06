@@ -9,6 +9,15 @@ do!
 
 Backup:
 
+Find out what keys to backup:
+
+```sh
+defaults export com.googlecode.iterm2 > before.txt
+# change preferred settings
+defaults export com.googlecode.iterm2 > after.txt
+diff -wyW200 before.txt after.txt
+```
+
 ```sh
 .config/backup/bdefaults backup --all --path .config/backup/defaults
 ```
