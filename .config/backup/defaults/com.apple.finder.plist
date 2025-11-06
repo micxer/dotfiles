@@ -21,7 +21,7 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{1940, 88}, {1516, 953}}</string>
+			<string>{{1728, 0}, {1280, 1415}}</string>
 		</dict>
 	</dict>
 	<key>FK_DefaultIconViewSettings</key>
@@ -69,7 +69,7 @@
 				<key>visible</key>
 				<true/>
 				<key>width</key>
-				<integer>518</integer>
+				<integer>320</integer>
 			</dict>
 			<dict>
 				<key>ascending</key>
@@ -85,9 +85,9 @@
 				<key>ascending</key>
 				<false/>
 				<key>identifier</key>
-				<string>dateModified</string>
+				<string>dateCreated</string>
 				<key>visible</key>
-				<true/>
+				<false/>
 				<key>width</key>
 				<integer>181</integer>
 			</dict>
@@ -95,9 +95,9 @@
 				<key>ascending</key>
 				<false/>
 				<key>identifier</key>
-				<string>dateCreated</string>
+				<string>dateModified</string>
 				<key>visible</key>
-				<false/>
+				<true/>
 				<key>width</key>
 				<integer>181</integer>
 			</dict>
@@ -113,7 +113,7 @@
 			</dict>
 			<dict>
 				<key>ascending</key>
-				<true/>
+				<false/>
 				<key>identifier</key>
 				<string>dateAdded</string>
 				<key>visible</key>
@@ -207,7 +207,7 @@
 		<key>showIconPreview</key>
 		<true/>
 		<key>sortColumn</key>
-		<string>dateModified</string>
+		<string>name</string>
 		<key>textSize</key>
 		<real>13</real>
 		<key>useRelativeDates</key>
@@ -407,7 +407,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>FK_SidebarWidth</key>
-	<real>200</real>
+	<real>170</real>
 	<key>FXDefaultSearchScope</key>
 	<string>SCcf</string>
 	<key>FXInfoPanesExpanded</key>
@@ -448,7 +448,7 @@
 			<key>ShowToolbar</key>
 			<true/>
 			<key>WindowBounds</key>
-			<string>{{256, 88}, {1301, 833}}</string>
+			<string>{{549, 111}, {1108, 814}}</string>
 		</dict>
 	</dict>
 	<key>NewWindowTarget</key>

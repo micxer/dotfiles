@@ -10,8 +10,6 @@
 	<true/>
 	<key>AppleHighlightColor</key>
 	<string>0.698039 0.843137 1.000000 Blue</string>
-	<key>AppleInterfaceStyle</key>
-	<string>Dark</string>
 	<key>AppleKeyboardUIMode</key>
 	<integer>0</integer>
 	<key>AppleMenuBarVisibleInFullscreen</key>
@@ -71,25 +69,17 @@
 			<key>on</key>
 			<integer>1</integer>
 			<key>replace</key>
-			<string>^3</string>
-			<key>with</key>
-			<string>³</string>
-		</dict>
-		<dict>
-			<key>on</key>
-			<integer>1</integer>
-			<key>replace</key>
-			<string>^2</string>
-			<key>with</key>
-			<string>²</string>
-		</dict>
-		<dict>
-			<key>on</key>
-			<integer>1</integer>
-			<key>replace</key>
 			<string>omw</string>
 			<key>with</key>
 			<string>On my way!</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>vlg</string>
+			<key>with</key>
+			<string>Viele liebe Grüße!</string>
 		</dict>
 	</array>
 	<key>NavPanelFileListModeForOpenMode</key>
@@ -102,7 +92,6 @@
 		<string>AppleAquaColorVariant</string>
 		<string>AppleEnableMouseSwipeNavigateWithScrolls</string>
 		<string>AppleHighlightColor</string>
-		<string>AppleInterfaceStyle</string>
 		<string>AppleKeyboardUIMode</string>
 		<string>AppleMenuBarVisibleInFullscreen</string>
 		<string>AppleShowAllExtensions</string>

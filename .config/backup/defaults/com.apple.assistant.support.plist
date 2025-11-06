@@ -126,17 +126,17 @@
 		<key>en-GB</key>
 		<dict>
 			<key>Auto Punctuation</key>
-			<false/>
+			<true/>
 			<key>Continuous Listening</key>
-			<false/>
+			<true/>
 			<key>Emoji Recognition</key>
-			<false/>
+			<true/>
 			<key>High Quality</key>
 			<true/>
 			<key>Installed</key>
-			<false/>
+			<true/>
 			<key>On Device Search</key>
-			<false/>
+			<true/>
 			<key>Voice Commands</key>
 			<false/>
 		</dict>
@@ -211,17 +211,17 @@
 		<key>en-US</key>
 		<dict>
 			<key>Auto Punctuation</key>
-			<false/>
+			<true/>
 			<key>Continuous Listening</key>
-			<false/>
+			<true/>
 			<key>Emoji Recognition</key>
-			<false/>
+			<true/>
 			<key>High Quality</key>
 			<true/>
 			<key>Installed</key>
-			<false/>
+			<true/>
 			<key>On Device Search</key>
-			<false/>
+			<true/>
 			<key>Voice Commands</key>
 			<false/>
 		</dict>
@@ -626,6 +626,23 @@
 			<false/>
 			<key>High Quality</key>
 			<true/>
+			<key>Installed</key>
+			<false/>
+			<key>On Device Search</key>
+			<false/>
+			<key>Voice Commands</key>
+			<false/>
+		</dict>
+		<key>vi-VN</key>
+		<dict>
+			<key>Auto Punctuation</key>
+			<false/>
+			<key>Continuous Listening</key>
+			<false/>
+			<key>Emoji Recognition</key>
+			<false/>
+			<key>High Quality</key>
+			<false/>
 			<key>Installed</key>
 			<false/>
 			<key>On Device Search</key>

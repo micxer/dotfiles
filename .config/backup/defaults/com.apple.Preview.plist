@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>NSColorPanelMode</key>
-	<string>1</string>
+	<string>0</string>
 	<key>NSColorPickerPreferredRGBEntryMode</key>
 	<integer>2</integer>
 	<key>NSColorPickerSlidersDefaults</key>
-	<string>1</string>
+	<string>0</string>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
@@ -22,7 +22,7 @@
 	<key>PVInspectorWindowOpenOnStart</key>
 	<false/>
 	<key>PVSidebarViewModeForNewDocuments</key>
-	<integer>3</integer>
+	<integer>1</integer>
 	<key>SettingsIndex</key>
 	<array>
 		<string>NSColorPanelMode</string>
@@ -37,6 +37,6 @@
 		<string>com.apple.AnnotationKit.strokeWidth</string>
 	</array>
 	<key>com.apple.AnnotationKit.strokeWidth</key>
-	<real>15</real>
+	<real>3</real>
 </dict>
 </plist>

@@ -22,12 +22,6 @@
 			<key>InputSourceKind</key>
 			<string>Non Keyboard Input Method</string>
 		</dict>
-		<dict>
-			<key>Bundle ID</key>
-			<string>com.apple.CharacterPaletteIM</string>
-			<key>InputSourceKind</key>
-			<string>Non Keyboard Input Method</string>
-		</dict>
 	</array>
 	<key>SettingsIndex</key>
 	<array>
