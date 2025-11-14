@@ -1,6 +1,12 @@
 #!/usr/bin/env zsh
 
-PATH="${HOME}/bin:${HOME}/.local/bin:${HOME}/.cargo/bin:${PATH}:/usr/local/opt/ansible@9/bin:${HOME}/Applications/Docker.app/Contents/Resources/bin"
+PATH="$PATH:${HOME}/bin"
+if [[ $(uname -m) == 'arm64' ]]
+then
+    PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+else
+    PATH="/usr/local/sbin:$PATH"
+fi
 export PATH
 
 # https://consoledonottrack.com/
@@ -13,11 +19,12 @@ zstyle ':completion:*' list-suffixes zstyle ':completion:*' expand prefix suffix
 # re-enable completion for cd ..
 zstyle -e ':completion:*' special-dirs '[[ $PREFIX = (../)#(|.|..) ]] && reply=(..)'
 
-if type brew &>/dev/null; then
-    FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
-    autoload -Uz compinit
-    compinit
+  autoload -Uz compinit
+  compinit
 fi
 
 ## History file configuration
@@ -40,9 +47,8 @@ export LANG=en_GB.UTF-8
 
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_AUTO_UPDATE_SECS=86400
-export HOMEBREW_NO_INSTALL_CLEANUP=
+export HOMEBREW_NO_INSTALL_CLEANUP=0
 export HOMEBREW_CASK_OPTS="--fontdir=\"/Library/Fonts\" --no-quarantine"
-[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
 if `/usr/libexec/java_home 2> /dev/null`
 then
@@ -50,57 +56,17 @@ then
 fi
 
 alias g="git"
-alias gw="gw.sh git"
 alias k="kubectl"
 
-# create a zkbd compatible hash;
-# to add other keys to this hash, see: man 5 terminfo
-typeset -g -A key
-
-key[Home]="${terminfo[khome]}"
-key[End]="${terminfo[kend]}"
-key[Insert]="${terminfo[kich1]}"
-key[Backspace]="${terminfo[kbs]}"
-key[Delete]="${terminfo[kdch1]}"
-key[Up]="${terminfo[kcuu1]}"
-key[Down]="${terminfo[kcud1]}"
-key[Left]="${terminfo[kcub1]}"
-key[Right]="${terminfo[kcuf1]}"
-key[PageUp]="${terminfo[kpp]}"
-key[PageDown]="${terminfo[knp]}"
-key[Shift-Tab]="${terminfo[kcbt]}"
-
-# setup key accordingly
-[[ -n "${key[Home]}"      ]] && bindkey -- "${key[Home]}"       beginning-of-line
-[[ -n "${key[End]}"       ]] && bindkey -- "${key[End]}"        end-of-line
-[[ -n "${key[Insert]}"    ]] && bindkey -- "${key[Insert]}"     overwrite-mode
-[[ -n "${key[Backspace]}" ]] && bindkey -- "${key[Backspace]}"  backward-delete-char
-[[ -n "${key[Delete]}"    ]] && bindkey -- "${key[Delete]}"     delete-char
-[[ -n "${key[Up]}"        ]] && bindkey -- "${key[Up]}"         up-line-or-history
-[[ -n "${key[Down]}"      ]] && bindkey -- "${key[Down]}"       down-line-or-history
-[[ -n "${key[Left]}"      ]] && bindkey -- "${key[Left]}"       backward-char
-[[ -n "${key[Right]}"     ]] && bindkey -- "${key[Right]}"      forward-char
-[[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"     beginning-of-buffer-or-history
-[[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"   end-of-buffer-or-history
-[[ -n "${key[Shift-Tab]}" ]] && bindkey -- "${key[Shift-Tab]}"  reverse-menu-complete
-
-# Finally, make sure the terminal is in application mode, when zle is
-# active. Only then are the values from $terminfo valid.
-if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
-	autoload -Uz add-zle-hook-widget
-	function zle_application_mode_start { echoti smkx }
-	function zle_application_mode_stop { echoti rmkx }
-	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
-	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
-fi
-
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-  eval `ssh-agent -s`
-  ssh-add
-fi
+source $HOME/.zkbd/$TERM
+[[ -n ${key[Home]} ]] && bindkey "${key[Home]}" beginning-of-line
+[[ -n ${key[End]} ]] && bindkey "${key[End]}" end-of-line
+[[ -n ${key[OptionLeft]} ]] && bindkey "${key[OptionLeft]}" backward-word
+[[ -n ${key[OptionRight]} ]] && bindkey "${key[OptionRight]}" forward-word
+[[ -n ${key[Delete]} ]] && bindkey "${key[Delete]}" delete-char
 
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/gpg-agent/gpg-agent.plugin.zsh
-export GPG_TTY=$(tty)
+export GPG_TTY=$TTY
 
 gpg-connect-agent updatestartuptty /bye &>/dev/null
 # If enable-ssh-support is set, fix ssh agent integration
@@ -111,8 +77,14 @@ if [[ $(gpgconf --list-options gpg-agent 2>/dev/null | awk -F: '$1=="enable-ssh-
   fi
 fi
 
-eval "$(direnv hook zsh)"
+# add local zshrc configuration
+[ -f ~/.zshrc_local ] && source ~/.zshrc_local
+
+# keep until switch to ghostty is complete
+[ -f ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.zsh
 
 export STARSHIP_CONFIG=$HOME/.starship.toml
 eval "$(starship init zsh)"
+
+eval "$(direnv hook zsh)"
 
