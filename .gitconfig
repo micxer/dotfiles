@@ -24,6 +24,7 @@
     rbi = rebase --interactive
     rbm = rebase main
     rbim = rebase --interactive main
+    rbum = !git fetch upstream && git rebase --onto upstream/main main
     # fixup messed up commit
     rbfx = rebase --interactive HEAD~2
     rbas = rebase --autosquash main
@@ -44,6 +45,8 @@
     ups = log --graph --date-order --pretty=tformat:\"%C(yellow)%h%Creset %C(magenta)%aE %ai%Creset %C(green bold)%d%Creset%n        %s\" --boundary --all --not --remotes --tags
     # show tags sorted by date
     tbyd = for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags
+    # show local branches without remote counterpart
+    locbr = !git branch -vv | grep -v '\\[origin/' | grep -v '^\\*' && git branch -vv | grep '^\\*' | grep -v '\\[origin/'
     staash = stash --all
 [color]
     ui = true
