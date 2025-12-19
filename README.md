@@ -12,9 +12,9 @@ Backup:
 Find out what keys to backup:
 
 ```sh
-defaults export com.googlecode.iterm2 > before.txt
+defaults export com.apple.Safari before.txt
 # change preferred settings
-defaults export com.googlecode.iterm2 > after.txt
+defaults export com.apple.Safari after.txt
 diff -wyW200 before.txt after.txt
 ```
 
