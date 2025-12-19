@@ -1,6 +1,6 @@
 [user]
-    name = micxer
-    email = micxer@micxer.de
+	name = micxer
+	email = micxer@micxer.de
 [core]
     editor = vim
 [alias]
@@ -46,7 +46,7 @@
     # show tags sorted by date
     tbyd = for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags
     # show local branches without remote counterpart
-    locbr = !git branch -vv | grep -v '\\[origin/' | grep -v '^\\*' && git branch -vv | grep '^\\*' | grep -v '\\[origin/'
+    locbr = "!git branch -vv | awk '/: gone]/{print;next} !/[[]origin\\//{print $0 \" [local]\"}' | sed $'s/: gone]/: \\e[31mgone\\e[0m]/; s/\\\\[local]/[\\e[33mlocal\\e[0m]/'"
     staash = stash --all
 [color]
     ui = true
