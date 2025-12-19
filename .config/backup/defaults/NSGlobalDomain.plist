@@ -63,6 +63,16 @@
 	<integer>2</integer>
 	<key>NSNavPanelFileListModeForSaveMode2</key>
 	<integer>2</integer>
+	<key>NSPreferredWebServices</key>
+	<dict>
+		<key>NSWebServicesProviderWebSearch</key>
+		<dict>
+			<key>NSDefaultDisplayName</key>
+			<string>DuckDuckGo</string>
+			<key>NSProviderIdentifier</key>
+			<string>com.duckduckgo</string>
+		</dict>
+	</dict>
 	<key>NSUserDictionaryReplacementItems</key>
 	<array>
 		<dict>
@@ -124,6 +134,7 @@
 		<string>com.apple.mouse.scaling</string>
 		<string>com.apple.sound.beep.feedback</string>
 		<string>com.apple.swipescrolldirection</string>
+		<string>NSPreferredWebServices</string>
 	</array>
 	<key>WebAutomaticSpellingCorrectionEnabled</key>
 	<false/>
