@@ -110,3 +110,5 @@
 	ui = auto
 [fetch]
 	prune = true
+[tag]
+	gpgsign = true
