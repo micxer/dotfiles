@@ -108,3 +108,5 @@
     path = ~/Development/work/.gitconfig
 [column]
 	ui = auto
+[fetch]
+	prune = true
