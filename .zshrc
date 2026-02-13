@@ -7,6 +7,7 @@ then
 else
     PATH="/usr/local/sbin:$PATH"
 fi
+PATH="/opt/homebrew/opt/node@24/bin:$PATH"
 export PATH
 
 # https://consoledonottrack.com/
