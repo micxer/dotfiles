@@ -89,3 +89,5 @@ eval "$(starship init zsh)"
 
 eval "$(direnv hook zsh)"
 
+# Replace zsh's default completion selection menu with fzf
+source "/opt/homebrew/opt/fzf-tab/share/fzf-tab/fzf-tab.zsh"
