@@ -81,9 +81,6 @@ fi
 # add local zshrc configuration
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
-# keep until switch to ghostty is complete
-[ -f ~/.iterm2_shell_integration.zsh ] && source ~/.iterm2_shell_integration.zsh
-
 export STARSHIP_CONFIG=$HOME/.starship.toml
 eval "$(starship init zsh)"
 
