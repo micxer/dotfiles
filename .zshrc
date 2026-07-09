@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-PATH="$PATH:${HOME}/bin"
+PATH="${HOME}/bin:${HOME}/.local/bin:${PATH}"
 if [[ $(uname -m) == 'arm64' ]]
 then
     PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
@@ -50,6 +50,7 @@ export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_INSTALL_CLEANUP=0
 export HOMEBREW_CASK_OPTS="--fontdir=\"/Library/Fonts\" --no-quarantine"
+export HOMEBREW_REQUIRE_TAP_TRUST=1
 
 if `/usr/libexec/java_home 2> /dev/null`
 then
