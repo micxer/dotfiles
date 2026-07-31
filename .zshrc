@@ -43,6 +43,7 @@ setopt INC_APPEND_HISTORY # append into history file
 # setopt HIST_IGNORE_ALL_DUPS  # remove the older command even if it is not the previous event
 setopt HIST_REDUCE_BLANKS  ## Delete empty lines from history file
 setopt HIST_NO_STORE  ## Do not add history and fc commands to the history
+setopt HIST_IGNORE_SPACE  # Do not add commands prefixed with a space to history
 
 export LANG=en_GB.UTF-8
 
