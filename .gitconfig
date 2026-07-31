@@ -3,6 +3,7 @@
 	email = micxer@micxer.de
 [core]
     editor = vim
+	excludesFile = ~/.gitignore
 [alias]
     cp = cherry-pick
     ci = commit
