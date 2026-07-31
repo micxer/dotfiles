@@ -87,9 +87,17 @@
 			<key>on</key>
 			<integer>1</integer>
 			<key>replace</key>
-			<string>vlg</string>
+			<string>^2</string>
 			<key>with</key>
-			<string>Viele liebe Grüße!</string>
+			<string>²</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>^3</string>
+			<key>with</key>
+			<string>³</string>
 		</dict>
 	</array>
 	<key>NavPanelFileListModeForOpenMode</key>
